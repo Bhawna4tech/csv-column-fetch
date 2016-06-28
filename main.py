@@ -48,6 +48,9 @@ def upload():
 	file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 	#file.save(os.path.join('/uploads',filename))
         	
+	with open(os.path.join('uploads/',"new.csv"), "w") as csv_file:
+		writer = csv.writer(csv_file,delimiter= ',')
+		writer.writerow("Important Data")
 	print "hello I am above reading"
     	with open(os.path.join('uploads/',filename), 'rb') as csvfile:
 		#print "READING"
