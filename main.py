@@ -61,7 +61,7 @@ def upload():
     		reader = csv.reader(csvfile, delimiter=',')
 		#htmlfile = open("templates/hello2.html","w")
 		#htmlfile.write('<h1>' + 'Fetched Data' + '</h1>')
- 		os.remove(os.path.join('uploads/','new.csv')) #OTHERWISE, THE WRITE FILE WILL BECOME BULKY AND WILL HAVE REPEATED DATA
+ 		#os.remove(os.path.join('uploads/','new.csv')) #OTHERWISE, THE WRITE FILE WILL BECOME BULKY AND WILL HAVE REPEATED DATA
 		i=0
 		rownum=0
 		flag=0
