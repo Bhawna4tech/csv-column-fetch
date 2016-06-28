@@ -49,8 +49,7 @@ def upload():
 	#file.save(os.path.join('/uploads',filename))
         	
 	with open(os.path.join('uploads/',"new.csv"), "w") as csv_file:
-		writer = csv.writer(csv_file,delimiter= ',')
-		writer.writerow("Important Data")
+		csv_file.close()
 	print "hello I am above reading"
     	with open(os.path.join('uploads/',filename), 'rb') as csvfile:
 		#print "READING"
